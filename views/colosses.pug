@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title= `${title}`
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 <center>Custom Object Table<center>
+        h2 <center><a href="http://localhost:3000/updates">Add/Update this table</a><center>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Hight</th>
+                <th>Color</th>
+            </tr>
+            each coloss in data
+                    tr
+                        td.card_name #{coloss.properties.name}
+                        td.card_name #{coloss.properties.size}
+                        td.card_color #{coloss.properties.color}
