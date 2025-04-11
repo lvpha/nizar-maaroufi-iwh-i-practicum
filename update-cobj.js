@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const app = express();
 const pug = require('pug');
-const token = 'pat-na1-577f70d7-9d97-4da6-be15-072019597741';
+const token = '';
 
 app.post('/update-cobj', async (req, res) => {
 
