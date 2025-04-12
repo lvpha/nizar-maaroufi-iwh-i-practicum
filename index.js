@@ -18,6 +18,7 @@ app.get('/', async (req, res) => {
         'Content-Type': 'application/json'
     }
     const params = {
+        limit: '100',
         properties: 'name,color,size'
     }
 
